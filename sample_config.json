@@ -1,0 +1,6 @@
+{
+  "start_date": "Start date to extract data",
+  "client_id": "OAuth 2.0 Client ID",
+  "client_secret": "OAuth 2.0 Client Secret",
+  "refresh_token": "To refresh access_token"
+}

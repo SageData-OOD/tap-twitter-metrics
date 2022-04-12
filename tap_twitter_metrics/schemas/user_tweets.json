@@ -1,0 +1,104 @@
+{
+    "type": ["null", "object"],
+    "properties": {
+      "id": {"type": ["null", "string"]},
+      "text": {"type": ["null", "string"]},
+      "created_at": {"type": ["null", "string"], "format": "date-time"},
+      "public_metrics": {
+        "type": ["null", "object"],
+        "properties": {
+          "impression_count": {"type": ["null", "integer"]},
+          "retweet_count": {"type": ["null", "integer"]},
+          "quote_count": {"type": ["null", "integer"]},
+          "like_count": {"type": ["null", "integer"]},
+          "reply_count": {"type": ["null", "integer"]}
+        }
+      },
+      "non_public_metrics": {
+        "type": ["null", "object"],
+        "properties": {
+          "impression_count": {"type": ["null", "integer"]},
+          "url_link_clicks": {"type": ["null", "integer"]},
+          "user_profile_clicks": {"type": ["null", "integer"]}
+        }
+      },
+      "organic_metrics": {
+        "type": ["null", "object"],
+        "properties": {
+          "impression_count": {"type": ["null", "integer"]},
+          "retweet_count": {"type": ["null", "integer"]},
+          "like_count": {"type": ["null", "integer"]},
+          "reply_count": {"type": ["null", "integer"]},
+          "url_link_clicks": {"type": ["null", "integer"]},
+          "user_profile_clicks": {"type": ["null", "integer"]}
+        }
+      },
+      "promoted_metrics": {
+        "type": ["null", "object"],
+        "properties": {
+          "impression_count": {"type": ["null", "integer"]},
+          "retweet_count": {"type": ["null", "integer"]},
+          "like_count": {"type": ["null", "integer"]},
+          "reply_count": {"type": ["null", "integer"]},
+          "url_link_clicks": {"type": ["null", "integer"]},
+          "user_profile_clicks": {"type": ["null", "integer"]}
+        }
+      },
+      "author_id": {"type": ["null", "string"]},
+      "author_name": {"type": ["null", "string"]},
+      "media": {
+        "type":["null", "array"],
+        "items": {
+          "type": ["null", "object"],
+          "properties": {
+            "media_key": {"type": ["null", "string"]},
+            "type": {"type": ["null", "string"]},
+            "url": {"type": ["null", "string"]},
+            "duration_ms": {"type": ["null", "integer"]},
+            "height": {"type": ["null", "integer"]},
+            "non_public_metrics": {
+              "type": ["null", "object"],
+              "properties": {
+                "playback_0_count": {"type": ["null", "integer"]},
+                "playback_25_count": {"type": ["null", "integer"]},
+                "playback_50_count": {"type": ["null", "integer"]},
+                "playback_75_count": {"type": ["null", "integer"]},
+                "playback_100_count": {"type": ["null", "integer"]}
+              }
+            },
+            "organic_metrics": {
+              "type": ["null", "object"],
+              "properties": {
+                "playback_0_count": {"type": ["null", "integer"]},
+                "playback_25_count": {"type": ["null", "integer"]},
+                "playback_50_count": {"type": ["null", "integer"]},
+                "playback_75_count": {"type": ["null", "integer"]},
+                "playback_100_count": {"type": ["null", "integer"]},
+                "view_count": {"type": ["null", "integer"]}
+              }
+            },
+            "preview_image_url": {"type": ["null", "integer"]},
+            "promoted_metrics": {
+              "type": ["null", "object"],
+              "properties": {
+                "playback_0_count": {"type": ["null", "integer"]},
+                "playback_25_count": {"type": ["null", "integer"]},
+                "playback_50_count": {"type": ["null", "integer"]},
+                "playback_75_count": {"type": ["null", "integer"]},
+                "playback_100_count": {"type": ["null", "integer"]},
+                "view_count": {"type": ["null", "integer"]}
+              }
+            },
+            "public_metrics": {
+              "type": ["null", "object"],
+              "properties": {
+                "view_count": {"type": ["null", "integer"]}
+              }
+            },
+            "width": {"type": ["null", "integer"]},
+            "alt_text": {"type": ["null", "string"]}
+          }
+        }
+      }
+    }
+}
