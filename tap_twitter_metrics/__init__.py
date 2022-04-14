@@ -142,8 +142,9 @@ def request_data(config):
         if tweets.data:
             all_tweets += tweets.data
             all_attachment_media.update({m.media_key: m.data for m in tweets.includes.get("media", [])})
-            next_token = tweets.meta.get("next_token")
             
+        next_token = tweets.meta.get("next_token")
+
         if first_call:
             first_call = False
 
