@@ -139,9 +139,11 @@ def request_data(config):
         if tweets.errors:
             raise Exception(str(tweets.errors))
 
-        all_tweets += tweets.data
-        all_attachment_media.update({m.media_key: m.data for m in tweets.includes.get("media", [])})
-        next_token = tweets.meta.get("next_token")
+        if tweets.data:
+            all_tweets += tweets.data
+            all_attachment_media.update({m.media_key: m.data for m in tweets.includes.get("media", [])})
+            next_token = tweets.meta.get("next_token")
+            
         if first_call:
             first_call = False
 
