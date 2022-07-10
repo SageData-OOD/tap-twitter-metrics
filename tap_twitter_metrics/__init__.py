@@ -129,7 +129,8 @@ def request_data(config):
     first_call = True
     while next_token or first_call:
         tweets = client.get_users_tweets(id=user["id"],
-                                         expansions=["attachments.media_keys", "author_id"],
+                                        #  expansions=["attachments.media_keys", "author_id"],
+                                         expansions=["author_id"],
                                          media_fields=["public_metrics", "non_public_metrics", "organic_metrics",
                                                        "url", "duration_ms", "height", "width", "alt_text"],
                                          tweet_fields=["public_metrics", "non_public_metrics", "organic_metrics",
